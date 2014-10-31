@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 	<featureModel chosenLayoutAlgorithm="1">
 		<struct>
-			<and abstract="true" mandatory="true" name="Der Alles Rechner">
+			<and abstract="true" mandatory="true" name="Der Alles-Rechner">
 				<description>
 					Der "Alles"-Rechner ist ein hilfreiches Tool für viele verschiedene Anwendungsfälle.
 					Der Nutzer kann zwischen mehreren verschiedenen Einheiten wählen die jeweils mehrere Werkzeuge mit sich bringen.
@@ -158,7 +158,7 @@
 					</feature>
 					<feature mandatory="true" name="Textuell">
 						<description>
-							Konsolensteuerung 
+							Konsolensteuerung
 						</description>
 					</feature>
 				</alt>
