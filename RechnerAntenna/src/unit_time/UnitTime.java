@@ -1,4 +1,4 @@
-//#if ZeitEinheit
+//#if TimeEinheit
 //@package unit_time;
 //@
 //@public class UnitTime {

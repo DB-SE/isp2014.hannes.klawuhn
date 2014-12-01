@@ -22,13 +22,13 @@ public class Main {
 //@				menuOptions.add("Physics Unit");
 			//#endif
 			//#if FinanzEinheit
-//@				menuOptions.add("Finance Unit");
+				menuOptions.add("Finance Unit");
 			//#endif
-			//#if ZeitEinheit
+			//#if TimeEinheit
 //@				menuOptions.add("Time Unit");
 			//#endif
 			//#if AutoEinheit
-				menuOptions.add("Car Unit");
+//@				menuOptions.add("Car Unit");
 			//#endif
 			
 			new Menu(menuOptions);

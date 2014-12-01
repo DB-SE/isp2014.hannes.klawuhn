@@ -81,7 +81,7 @@
 							</description>
 						</feature>
 					</or>
-					<or mandatory="true" name="ZeitEinheit">
+					<or mandatory="true" name="TimeEinheit">
 						<description>
 							Abstraktion der Zeit Einheit
 							liefert Werkzeuge die jeweils mit Zeit oder Daten zu tun haben

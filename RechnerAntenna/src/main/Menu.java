@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //#if AutoEinheit
-import unit_car.UnitCar;
+//@import unit_car.UnitCar;
 //#endif
-//#if ZeitEinheit
+//#if TimeEinheit
 //@import unit_time.UnitTime;
 //#endif
 //#if FinanzEinheit
-//@import unit_finance.UnitFinance;
+import unit_finance.UnitFinance;
 //#endif
 //#if PhysikEinheit
 //@import unit_physics.UnitPhysics;
@@ -58,18 +58,21 @@ public class Menu {
 //@		else 
 		//#endif
 		//#if FinanzEinheit
-//@		if(resArg.equalsIgnoreCase("FINANCE UNIT"))
-//@			new UnitFinance();
-//@		else 
+		if(resArg.equalsIgnoreCase("FINANCE UNIT"))
+			new UnitFinance();
+		else 
 		//#endif
-		//#if ZeitEinheit
+		//#if TimeEinheit
 //@		if(resArg.equalsIgnoreCase("TIME UNIT"))
 //@			new UnitTime();
 //@		else 
 		//#endif
 		//#if AutoEinheit
-		if(resArg.equalsIgnoreCase("CAR UNIT"))
-			new UnitCar();
+//@		if(resArg.equalsIgnoreCase("CAR UNIT"))
+//@			new UnitCar();
+//@		else
 		//#endif
+			System.out.println("Something went wrong!");
+		
 	}
 }

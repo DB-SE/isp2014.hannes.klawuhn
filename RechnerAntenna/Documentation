@@ -1,0 +1,20 @@
+Implementiert sind rudimentär alle Einheiten. Sie sind theoretisch 
+anwählbar und im Menü auswählbar. Zusätzlich ist noch für die Mathe Einheit
+ein eigenes Menü mit den Unter Features implementiert.
+
+Die einzelnen Mathe Features wollte ich auch noch implementieren jedoch hab ich 
+einen nicht zurückzuverfolgenden Fehler beobachtet der es mir zeitlich nicht mehr 
+ermöglicht dies zu tun.
+
+Die Menü Punkte werden jeweils durch Präprozessor Direktiven hinzugefügt oder auch nicht.
+Nun folgender Fehler:
+
+Manchmal erkennt er alle Features der aktuell ausgewählten Config und lässt sie drin,
+manchmal tut er das nicht. Woran das liegt ist mir leider nicht erkenntlich.
+Insbesondere mit der Time und PhysikEinheit hat er ein Problem zu haben.
+
+Spelling Fehler sind es nicht meines Erachtens nach und auch Syntax Fehler schließe ich aus.
+
+Soweit ist es mit allen 5 Configs getestet und iwie lief nur die carConfig und minConfig 
+ohne Probleme. Alle anderen hatten meist ein Problem mit der Time oder PhysikEinheit
+die zwar angewählt aber nicht vom Präprozessor eingebaut wurde.

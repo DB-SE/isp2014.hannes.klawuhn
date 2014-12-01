@@ -3,7 +3,6 @@ package unit_math;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import unit_car.UnitCar;
 
 public class MathMenu {
 	
@@ -40,6 +39,18 @@ public class MathMenu {
 				//new UnitMath();
 			else 
 			//#endif
-				System.out.println("Irgendetwas lief schief");
+			//#if Wissenschaftlich
+			if(resArg.equalsIgnoreCase("Wissenschaftlicher Taschenrechner"))
+				System.out.println("Debug2");
+				//new UnitMath();
+			else 
+			//#endif 
+			//#if Kurvendiskussion
+			if(resArg.equalsIgnoreCase("Kurvendiskussion"))
+				System.out.println("Debug3");
+				//new UnitMath();
+			else 
+			//#endif	
+			System.out.println("Irgendetwas lief schief");
 		}
 }
