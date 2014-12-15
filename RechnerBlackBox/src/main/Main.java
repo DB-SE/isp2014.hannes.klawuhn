@@ -16,6 +16,8 @@ public class Main {
 		/* Initialisieren der Features */
 		FeatureInterface simpleCalc = new SimpleCalc("Simpler Rechner", mathMenu);
 		FeatureInterface scienceCalc = new ScienceCalc("Wissenschaftlicher Rechner", mathMenu);
+		FeatureInterface analysisCalc = new analysisCalc("Kurvendiskussion", mathMenu);
+		FeatureInterface currencyCalc = new CurrencyCalc("Währungsumrechner", financeMenu);
 		
 		ArrayList<MenuInterface> featureMenus = new ArrayList<MenuInterface>();
 		ArrayList<FeatureInterface> features = new ArrayList<FeatureInterface>();
@@ -30,6 +32,8 @@ public class Main {
 		
 		features.add(simpleCalc);
 		features.add(scienceCalc);
+		features.add(analysisCalc);
+		features.add(currencyCalc);
 		
 		mainMenu.showMenu(featureMenus, features);
 		
