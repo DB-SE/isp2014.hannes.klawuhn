@@ -35,7 +35,7 @@ public class MainMenu implements MenuInterface {
 		frame.setLayout(new FlowLayout());
 		
 		
-		frame.add(new JLabel("Haupt Menü"));
+	 	frame.add(new JLabel("Haupt Menü"));
 		for(int i = 0; i < featureMenus.size() ;i++ ){
 			if( featureMenus.get(i).getParent() == this ){
 				JButton button = new JButton( featureMenus.get(i).getName() );
