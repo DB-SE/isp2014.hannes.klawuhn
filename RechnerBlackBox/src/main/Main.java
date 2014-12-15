@@ -25,10 +25,10 @@ public class Main {
 		/* Einfügen der Features in die dafür vorgesehenen Listen --> (De-)Aktivieren */
 		featureMenus.add(mainMenu);
 		featureMenus.add(mathMenu);
-		featureMenus.add(carMenu);
+		//featureMenus.add(carMenu);
 		featureMenus.add(financeMenu);
-		featureMenus.add(timeMenu);
-		featureMenus.add(physicsMenu);
+		//featureMenus.add(timeMenu);
+		//featureMenus.add(physicsMenu);
 		
 		features.add(simpleCalc);
 		features.add(scienceCalc);
