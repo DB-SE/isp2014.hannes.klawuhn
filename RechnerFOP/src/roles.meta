@@ -1,0 +1,13 @@
+{
+	"features" : [
+		"Menü",
+		"MatheEinheit",
+		"Grundrechenarten",
+		"TimeEinheit",
+		"Datumsrechner",
+		"Textuell"
+	],
+	"roles": {
+	}
+
+}
