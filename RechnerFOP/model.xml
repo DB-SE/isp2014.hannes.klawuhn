@@ -6,7 +6,7 @@
 					Der "Alles"-Rechner ist ein hilfreiches Tool für viele verschiedene Anwendungsfälle.
 					Der Nutzer kann zwischen mehreren verschiedenen Einheiten wählen die jeweils mehrere Werkzeuge mit sich bringen.
 				</description>
-				<or mandatory="true" name="Menü">
+				<or mandatory="true" name="Menu">
 					<description>
 						Das Menü ist ein Pflichtfeature. 
 						Es integriert das Menü über das auf jedes Werkzeug zugegriffen wird
@@ -47,7 +47,7 @@
 							Abstraktion der Finanz Einheit
 							Es beinhaltet Werkzeuge für verschiedene Probleme im Finanzsektor
 						</description>
-						<feature mandatory="true" name="Währungsumrechner">
+						<feature mandatory="true" name="Waehrungsumrechner">
 							<description>
 								Der Währungsumrechner rechnet Währungen ineinander um.
 								Beispielsweise von Euro zu Dollar
@@ -114,7 +114,7 @@
 								Der Spritrechner berechnet aus gefahrener Strecke, Verbrauch und aktuellem Spritpreis den Gesamtverbrauch und Preis
 							</description>
 						</feature>
-						<feature mandatory="true" name="Bußgeldrechner">
+						<feature mandatory="true" name="Bussgeldrechner">
 							<description>
 								Zeigt dem Nutzer nach Eingabe seines Vergehens die zu erwartende
 								Strafe an.
