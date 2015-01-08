@@ -43,63 +43,20 @@ public   class  Main {
 	}
 
 	
-	 private static void  main__wrappee__Wissenschaftlich  (String[] args){
-		FeatureInterface simpleCalc = new SimpleCalc("Wissenschaft Rechner", "Mathe Einheit");
-		features.add(simpleCalc);
-	
-		main__wrappee__Grundrechenarten(args);
-	}
-
-	
-	 private static void  main__wrappee__Kurvendiskussion  (String[] args){
-		FeatureInterface simpleCalc = new AnalysisCalc("Kurvendiskussion", "Mathe Einheit");
-		features.add(simpleCalc);
-	
-		main__wrappee__Wissenschaftlich(args);
-	}
-
-	
 	 private static void  main__wrappee__FinanzEinheit  (String[] args){
 		
 		MenuInterface financeMenu = new FinanceMenu("Finanz Einheit", mainMenu);
 		featureMenus.add(financeMenu);
 		
-		main__wrappee__Kurvendiskussion(args);
-	}
-
-	
-	 private static void  main__wrappee__Waehrungsumrechner  (String[] args){
-		FeatureInterface simpleCalc = new SimpleCalc("Währungs Rechner", "Finanz Einheit");
-		features.add(simpleCalc);
-	
-		main__wrappee__FinanzEinheit(args);
-	}
-
-	
-	 private static void  main__wrappee__PhysikEinheit  (String[] args){
-		
-		MenuInterface physicsMenu = new PhysicsMenu("Physik Einheit", mainMenu);
-		featureMenus.add(physicsMenu);
-		
-		main__wrappee__Waehrungsumrechner(args);
-	}
-
-	
-	 private static void  main__wrappee__TimeEinheit  (String[] args){
-		
-		MenuInterface timeMenu = new TimeMenu("Zeit Einheit", mainMenu);
-		featureMenus.add(timeMenu);
-		
-		main__wrappee__PhysikEinheit(args);
+		main__wrappee__Grundrechenarten(args);
 	}
 
 	
 	public static void main (String[] args){
-		
-		MenuInterface carMenu = new CarMenu("Auto Einheit", mainMenu);
-		featureMenus.add(carMenu);
-		
-		main__wrappee__TimeEinheit(args);
+		FeatureInterface simpleCalc = new SimpleCalc("Währungs Rechner", "Finanz Einheit");
+		features.add(simpleCalc);
+	
+		main__wrappee__FinanzEinheit(args);
 	}
 
 

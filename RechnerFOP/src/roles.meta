@@ -3,26 +3,9 @@
 		"Menu",
 		"MatheEinheit",
 		"Grundrechenarten",
-		"Wissenschaftlich",
-		"Kurvendiskussion",
-		"Funktionsanzeige",
 		"FinanzEinheit",
 		"Waehrungsumrechner",
-		"Zinsrechner",
-		"PhysikEinheit",
-		"Einheitenrechner",
-		"Mechanik",
-		"Optik",
-		"TimeEinheit",
-		"Datumsrechner",
-		"StoppUhr",
-		"Weltzeituhr",
-		"AutoEinheit",
-		"Spritrechner",
-		"Bussgeldrechner",
-		"Fahrtenbuch",
-		"metrisch",
-		"Graphisch"
+		"Textuell"
 	],
 	"roles": {
 		"getName": {
@@ -80,9 +63,9 @@
 			"Wissenschaftlich": "main__wrappee__Wissenschaftlich",
 			"PhysikEinheit": "main__wrappee__PhysikEinheit",
 			"TimeEinheit": "main__wrappee__TimeEinheit",
-			"AutoEinheit": "main",
+			"AutoEinheit": "main__wrappee__Menu",
 			"Kurvendiskussion": "main__wrappee__Kurvendiskussion",
-			"Waehrungsumrechner": "main__wrappee__Waehrungsumrechner"
+			"Waehrungsumrechner": "main"
 		},
 		"calculate": {
 			"Grundrechenarten": "calculate",
