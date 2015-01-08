@@ -1,0 +1,76 @@
+{
+	"features" : [
+		"Menu",
+		"MatheEinheit",
+		"Grundrechenarten",
+		"FinanzEinheit",
+		"Waehrungsumrechner",
+		"Textuell"
+	],
+	"roles": {
+		"getName": {
+			"Menu": "getName",
+			"MatheEinheit": "getName",
+			"FinanzEinheit": "getName",
+			"Grundrechenarten": "getName",
+			"Wissenschaftlich": "getName",
+			"PhysikEinheit": "getName",
+			"TimeEinheit": "getName",
+			"AutoEinheit": "getName",
+			"Kurvendiskussion": "getName",
+			"Waehrungsumrechner": "getName"
+		},
+		"getParent": {
+			"Menu": "getParent",
+			"MatheEinheit": "getParent",
+			"FinanzEinheit": "getParent",
+			"Grundrechenarten": "getParent",
+			"Wissenschaftlich": "getParent",
+			"PhysikEinheit": "getParent",
+			"TimeEinheit": "getParent",
+			"AutoEinheit": "getParent",
+			"Kurvendiskussion": "getParent",
+			"Waehrungsumrechner": "getParent"
+		},
+		"showFeature": {
+			"Menu": "showFeature",
+			"Grundrechenarten": "showFeature",
+			"Wissenschaftlich": "showFeature",
+			"Kurvendiskussion": "showFeature",
+			"Waehrungsumrechner": "showFeature"
+		},
+		"showMenu": {
+			"Menu": "showMenu",
+			"MatheEinheit": "showMenu",
+			"FinanzEinheit": "showMenu",
+			"PhysikEinheit": "showMenu",
+			"TimeEinheit": "showMenu",
+			"AutoEinheit": "showMenu"
+		},
+		"showFeatMenu": {
+			"Menu": "showFeatMenu",
+			"MatheEinheit": "showFeatMenu",
+			"FinanzEinheit": "showFeatMenu",
+			"PhysikEinheit": "showFeatMenu",
+			"TimeEinheit": "showFeatMenu",
+			"AutoEinheit": "showFeatMenu"
+		},
+		"main": {
+			"Menu": "main__wrappee__Menu",
+			"MatheEinheit": "main__wrappee__MatheEinheit",
+			"FinanzEinheit": "main__wrappee__FinanzEinheit",
+			"Grundrechenarten": "main__wrappee__Grundrechenarten",
+			"Wissenschaftlich": "main__wrappee__Wissenschaftlich",
+			"PhysikEinheit": "main__wrappee__PhysikEinheit",
+			"TimeEinheit": "main__wrappee__TimeEinheit",
+			"AutoEinheit": "main__wrappee__Menu",
+			"Kurvendiskussion": "main__wrappee__Kurvendiskussion",
+			"Waehrungsumrechner": "main"
+		},
+		"calculate": {
+			"Grundrechenarten": "calculate",
+			"Waehrungsumrechner": "calculate"
+		}
+	}
+
+}
