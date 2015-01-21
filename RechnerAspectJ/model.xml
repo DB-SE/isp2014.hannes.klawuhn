@@ -1,11 +1,189 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 	<featureModel chosenLayoutAlgorithm="1">
 		<struct>
-			<and abstract="true" mandatory="true" name="RechnerAspectJ">
-				<feature name="Base"/>
+			<and abstract="true" mandatory="true" name="DerAllesRechner">
+				<description>
+					Der "Alles"-Rechner ist ein hilfreiches Tool für viele verschiedene Anwendungsfälle.
+					Der Nutzer kann zwischen mehreren verschiedenen Einheiten wählen die jeweils mehrere Werkzeuge mit sich bringen.
+				</description>
+				<or mandatory="true" name="Menu">
+					<description>
+						Das Menü ist ein Pflichtfeature. 
+						Es integriert das Menü über das auf jedes Werkzeug zugegriffen wird
+					</description>
+					<or mandatory="true" name="MatheEinheit">
+						<description>
+							Abstraktion der Mathe Einheit
+							Im Prinzip die Implementation eines Taschenrechners
+							(evtl. muss das nicht Abstrakt sein...)
+						</description>
+						<feature mandatory="true" name="Grundrechenarten">
+							<description>
+								Implementiert alle Grundrechenarten für den Taschenrechner
+								+-*/
+							</description>
+						</feature>
+						<feature mandatory="true" name="Wissenschaftlich">
+							<description>
+								erweitert den Taschenrechner um erweiterte wissenschaftliche Funktionen
+								wie zB:  Wurzel, Potenz, eulersche Zahl, etc.
+							</description>
+						</feature>
+						<and mandatory="true" name="Kurvendiskussion">
+							<description>
+								erweitert den Taschenrechner um die Funktion eine Kurvendiskussion durchzuführen
+								Als Eingabe nimmt er eine mathematische Funktion und bildet die Ableitungen, findet Nullpunkte usw.
+							</description>
+							<feature name="Funktionsanzeige">
+								<description>
+									Dieses Feature befähigt den Taschenrechner dazu die eingegebene Funktion graphisch anzuzeigen
+									Dafür ist das Feature der graphischen Oberfläche Pflicht.
+								</description>
+							</feature>
+						</and>
+					</or>
+					<or mandatory="true" name="FinanzEinheit">
+						<description>
+							Abstraktion der Finanz Einheit
+							Es beinhaltet Werkzeuge für verschiedene Probleme im Finanzsektor
+						</description>
+						<feature mandatory="true" name="Waehrungsumrechner">
+							<description>
+								Der Währungsumrechner rechnet Währungen ineinander um.
+								Beispielsweise von Euro zu Dollar
+							</description>
+						</feature>
+						<feature mandatory="true" name="Zinsrechner">
+							<description>
+								Der Zinsrechner berechnet aus Nutzereingaben beispielsweise das Endkapital nach einer bestimmten Laufzeit o.ä.
+							</description>
+						</feature>
+					</or>
+					<or mandatory="true" name="PhysikEinheit">
+						<description>
+							Abstraktion der Physik Einheit
+							Es beinhaltet Werkzeuge um Probleme der Physik zu berechnen
+						</description>
+						<feature mandatory="true" name="Einheitenrechner">
+							<description>
+								Der Einheitenrechner rechnet verschiedene Einheiten ineinander um
+								zB  PS zu kW
+							</description>
+						</feature>
+						<feature mandatory="true" name="Mechanik">
+							<description>
+								führt durch Nutzereingaben verschiedenste Berechnungen der Mechanik durch
+							</description>
+						</feature>
+						<feature mandatory="true" name="Optik">
+							<description>
+								führt durch Nutzereingaben verschiedenste Berechnungen der Optik durch
+							</description>
+						</feature>
+					</or>
+					<or mandatory="true" name="TimeEinheit">
+						<description>
+							Abstraktion der Zeit Einheit
+							liefert Werkzeuge die jeweils mit Zeit oder Daten zu tun haben
+						</description>
+						<feature mandatory="true" name="Datumsrechner">
+							<description>
+								der Datumsrechner gibt den jeweiligen Wochentag für ein bestimmtes Datum aus
+							</description>
+						</feature>
+						<feature mandatory="true" name="StoppUhr">
+							<description>
+								liefert eine Stoppuhr
+								graphisch: fortlaufend
+								textuell: gibt nur die Endzeit aus nachdem der Stop Befehl ausgeführt wurde
+							</description>
+						</feature>
+						<feature mandatory="true" name="Weltzeituhr">
+							<description>
+								zeigt die aktuelle Zeit für jede Zeitzone der Welt an
+							</description>
+						</feature>
+					</or>
+					<or mandatory="true" name="AutoEinheit">
+						<description>
+							Abstraktion der Auto Einheit
+							nützliche Werkzeuge für Fahrzeugführer
+						</description>
+						<feature mandatory="true" name="Spritrechner">
+							<description>
+								Der Spritrechner berechnet aus gefahrener Strecke, Verbrauch und aktuellem Spritpreis den Gesamtverbrauch und Preis
+							</description>
+						</feature>
+						<feature mandatory="true" name="Bussgeldrechner">
+							<description>
+								Zeigt dem Nutzer nach Eingabe seines Vergehens die zu erwartende
+								Strafe an.
+							</description>
+						</feature>
+						<feature mandatory="true" name="Fahrtenbuch">
+							<description>
+								Bietet dem Nutzer die Möglichkeit seine Fahrten einzutragen und zu katalogisieren.
+								Weitere Funktionen wären denkbar (durchschn. Spritverbrauch u.ä.)
+							</description>
+						</feature>
+						<alt abstract="true" mandatory="true" name="Einheitensystem">
+							<description>
+								Abstraktion des Einheitensystems
+								Wird die Auto Einheit gewählt muss gewählt werden in welchem
+								Einheitensystem gearbeitet werden soll.
+							</description>
+							<feature mandatory="true" name="metrisch">
+								<description>
+									metrisches System (Europa und so ziemlich der Rest der Welt)
+								</description>
+							</feature>
+							<feature mandatory="true" name="angloamerikanisch">
+								<description>
+									Angloamerikanisches System (USA)
+								</description>
+							</feature>
+						</alt>
+					</or>
+				</or>
+				<alt abstract="true" mandatory="true" name="UI">
+					<description>
+						Abstraktion des User Interfaces 
+						Entweder es gibt eine grafische Oberfläche oder jedes Werkzeug
+						wird textuell über die Konsole gesteuert
+					</description>
+					<feature mandatory="true" name="Graphisch">
+						<description>
+							Graphische Oberfläche für das Menü und möglichst jedes Werkzeug
+						</description>
+					</feature>
+					<feature mandatory="true" name="Textuell">
+						<description>
+							Konsolensteuerung
+						</description>
+					</feature>
+				</alt>
 			</and>
 		</struct>
-		<constraints/>
+		<constraints>
+			<rule>
+				<imp>
+					<var>Funktionsanzeige</var>
+					<var>Graphisch</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>AutoEinheit</var>
+					<var>Einheitensystem</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>MatheEinheit</var>
+					<var>Grundrechenarten</var>
+				</imp>
+			</rule>
+		</constraints>
 		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
 		<comments/>
 		<featureOrder userDefined="false"/>
